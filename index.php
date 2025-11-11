@@ -1,5 +1,5 @@
 <?php 
- require('send.php'); 
+ include('send.php'); 
 $placed = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
