@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+nav{
+    background-color: burlywood;
+    text-align: center;
+    justify-items: center;
+    color: rgb(16, 16, 16);
+}
+footer{
+    background-color: burlywood;
+    text-align: center;
+    justify-items: center;
+    color: rgb(16, 16, 16);
+}
+
+.done{
+    background-color: burlywood;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    
+}
+.submit-container {
+    text-align: center; /* Center the submit button */
+    margin-top: 20px; /* Add some space above the button */
+}
+input[type="submit"] {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+}
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+.order{
+    color: greenyellow;
+    text-align: center;
+}
+.form-container {
+    max-width: 600px; /* Maximum width of the form */
+    margin: 0 auto; /* Center the form */
+    padding: 20px; /* Padding around the form */
+}
+.alert {
+    margin-top: 20px; /* Space above the alert */
+}
