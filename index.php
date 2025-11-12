@@ -1,5 +1,5 @@
 <?php 
- include 'send.php'; 
+include 'Send.php';
 $placed = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <?php include 'header.php'; ?>
+    <?php include('header.php'); ?>
 
     <div class="form-container">
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
@@ -76,6 +76,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <?php endif; ?>
     </div>
 
-    <?php include 'footer.php'; ?>
+    <?php include('footer.php'); ?>
 </body>
 </html>
