@@ -1,12 +1,13 @@
 <?php 
 // Database configuration
-$servername = "localhost";
-$username = "Stephen"; 
-$password = "M@rtyr18"; 
-$dbname = "project";
+$host = getenv('MYSQLHOST') ?: 'localhost';
+$user = getenv('MYSQLUSER') ?: 'Stephen';
+$pass = getenv('MYSQLPASSWORD') ?: 'M@rtyr18';
+$db   = getenv('MYSQLDATABASE') ?: 'project';
+$port = getenv('MYSQLPORT') ?: 3306;
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($host, $user, $pass, $db, $port);
 
 // Check connection
 if ($conn->connect_error) {
