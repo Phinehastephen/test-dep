@@ -1,5 +1,5 @@
 <?php 
-include ('send.php');
+include(__DIR__ . '/send.php');
 $placed = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
