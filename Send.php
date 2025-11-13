@@ -6,7 +6,14 @@ $password = "M@rtyr18";
 $dbname = "project";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli(
+    getenv('MYSQLHOST'),
+    getenv('MYSQLUSER'),
+    getenv('MYSQLPASSWORD'),
+    getenv('MYSQLDATABASE'),
+    getenv('MYSQLPORT')
+);
+
 
 // Check connection
 if ($conn->connect_error) {
