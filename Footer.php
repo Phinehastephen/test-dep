@@ -15,8 +15,8 @@
 }
 </style>
 <body>
-    <!-- <footer>
-        <a href="#"><h3 class= "text-center">Contact at Will's.com</h3></a>
-    </footer> -->
+    <footer>
+        <a href="#"><h3 class= "text-center">Student's Data</h3></a>
+    </footer>
 </body>
 </html>
