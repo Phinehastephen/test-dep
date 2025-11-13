@@ -16,3 +16,6 @@ EXPOSE 3000
 # Start PHP's built-in server
 CMD ["php", "-S", "0.0.0.0:3000", "-t", "/var/www/html"]
 
+# Ensure .env is copied
+COPY .env .env
+
