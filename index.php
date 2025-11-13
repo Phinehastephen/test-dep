@@ -21,9 +21,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="index.css">
+     <style>
+        h1.a {
+            color: black;
+            text-decoration: none;
+        }
+           a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    
+}
+    </style>
 </head>
 <body>
-    <?php include('header.php'); ?>
+     <nav>
+        <h1 cl><a href="db.php">Olamide</a></h1>
+    </nav>
 
     <div class="form-container">
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
@@ -76,6 +90,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <?php endif; ?>
     </div>
 
-    <?php include('footer.php'); ?>
+    <footer>
+        <a href="#"><h3 class= "text-center">Student's Data</h3></a>
+    </footer>
 </body>
 </html>
